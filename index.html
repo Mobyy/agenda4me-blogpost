@@ -24,7 +24,8 @@
 <body>
     <!--header elementas su nav baru-->
     <section class="header">
-        <div class="container-fluid">
+        <!--desktop versijos navbar-->
+        <div class="container-fluid desktop-ver">
             <div class="row">
                 <div class="col-xl-2 col-lg-12">
                     <img src="images/cropped-1.png">
@@ -59,6 +60,32 @@
                 <div class="col-xl-1 col-lg-2 my-auto">
                     <a href="https://agenda4.me/health-during-pandemic/" style="color: red;">COVID19 INFO</a>
                 </div>
+            </div>
+        </div>
+        <!--mobile versija-->
+        <div class="container-fluid mobile-ver">
+            <div class="mobile-head">
+                
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check">
+              <i class="fas fa-bars" id="open-btn"></i>
+              <i class="fas fa-times" id="close-btn"></i>
+            </label>
+            <div class="sidebar">
+                <header>Close</header>
+                <ul>
+                    <li><a href="https://agenda4.me/find-online-agenda-ideas/">Agendas</a></li>
+                    <li><a href="https://agenda4.me/activities/education/">Education</a></li>
+                    <li><a href=https://agenda4.me/activities/travel/">Travel</a></li>
+                    <li><a href="https://agenda4.me/activities/sport/">Sport</a></li>
+                    <li><a href="https://agenda4.me/activities/food/">Food</a></li>
+                    <li><a href="https://agenda4.me/activities/wellbeing/">Going out</a></li>
+                    <li><a href="https://agenda4.me/activities/wellbeing/">Health</a></li>
+                    <li><a href="https://agenda4.me/activities/charity/">Charity</a></li>
+                    <li><a href="https://agenda4.me/activities/communication/">Communication</a></li>
+                    <li><a href="https://agenda4.me/health-during-pandemic/" style="color: red;">COVID19 INFO</a></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -170,5 +197,14 @@
     <section class="footer">
 
     </section>
+    <script>
+        function open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
 </body>
 </html>
