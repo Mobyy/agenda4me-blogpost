@@ -64,28 +64,34 @@
         </div>
         <!--mobile versija-->
         <div class="container-fluid mobile-ver">
-            <div class="mobile-head">
-                
-            </div>
-            <input type="checkbox" id="check">
-            <label for="check">
-              <i class="fas fa-bars" id="open-btn"></i>
-              <i class="fas fa-times" id="close-btn"></i>
-            </label>
-            <div class="sidebar">
-                <header>Close</header>
-                <ul>
-                    <li><a href="https://agenda4.me/find-online-agenda-ideas/">Agendas</a></li>
-                    <li><a href="https://agenda4.me/activities/education/">Education</a></li>
-                    <li><a href=https://agenda4.me/activities/travel/">Travel</a></li>
-                    <li><a href="https://agenda4.me/activities/sport/">Sport</a></li>
-                    <li><a href="https://agenda4.me/activities/food/">Food</a></li>
-                    <li><a href="https://agenda4.me/activities/wellbeing/">Going out</a></li>
-                    <li><a href="https://agenda4.me/activities/wellbeing/">Health</a></li>
-                    <li><a href="https://agenda4.me/activities/charity/">Charity</a></li>
-                    <li><a href="https://agenda4.me/activities/communication/">Communication</a></li>
-                    <li><a href="https://agenda4.me/health-during-pandemic/" style="color: red;">COVID19 INFO</a></li>
-                </ul>
+            <div class="row" style="height: 100%;">
+                <div class="col">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                      <i class="fas fa-bars" id="open-btn"></i>
+                      <i class="fas fa-times" id="close-btn"></i>
+                    </label>
+                    <div class="sidebar">
+                      <header>Close</header>
+                      <ul>
+                        <li><a href="https://agenda4.me/find-online-agenda-ideas/">Agendas</a></li>
+                        <li><a href="https://agenda4.me/activities/education/">Education</a></li>
+                        <li><a href=https://agenda4.me/activities/travel/">Travel</a></li>
+                        <li><a href="https://agenda4.me/activities/sport/">Sport</a></li>
+                        <li><a href="https://agenda4.me/activities/food/">Food</a></li>
+                        <li><a href="https://agenda4.me/activities/wellbeing/">Going out</a></li>
+                        <li><a href="https://agenda4.me/activities/wellbeing/">Health</a></li>
+                        <li><a href="https://agenda4.me/activities/charity/">Charity</a></li>
+                        <li><a href="https://agenda4.me/activities/communication/">Communication</a></li>
+                        <li><a href="https://agenda4.me/health-during-pandemic/" style="color: red;">COVID19 INFO</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col align-self-center">
+                    <div class="mobile-head">
+                        <img class="my-auto" src="images/cropped-1.png">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -197,14 +203,5 @@
     <section class="footer">
 
     </section>
-    <script>
-        function open() {
-          document.getElementById("mySidebar").style.display = "block";
-        }
-        
-        function close() {
-          document.getElementById("mySidebar").style.display = "none";
-        }
-        </script>
 </body>
 </html>

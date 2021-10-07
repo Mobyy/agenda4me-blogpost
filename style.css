@@ -30,17 +30,24 @@ a:hover {
   }
 }
 /*mobile header*/
-.mobile-head {
-  height: 150px;
+.mobile-ver {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  height: 125px;
   background: #333333;
+}
+.mobile-head img {
+  float: right;
+  padding-right: 20px;
 }
 /*side bar*/
 .sidebar {
   position: fixed;
-  left: 0;
+  left: -250px;
   width: 250px;
   height: 100%;
   background: #333333;
+  transition: all 0.5s ease;
 }
 .sidebar header {
   color: white;
@@ -69,12 +76,36 @@ label #open-btn,
 label #close-btn {
   position: absolute;
   cursor: pointer;
+  border-radius: 3px;
 }
 label #open-btn {
   left: 40px;
-  top: 25px;
+  top: 43px;
   font-size: 35px;
   color: white;
+  transition: all 0.5s ease;
+}
+label #close-btn {
+  z-index: 1111;
+  left: -195px;
+  top: 35px;
+  font-size: 30px;
+  color: white;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #open-btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+label #open-btn ~ .mobile-head img {
+  display: none;
+}
+#check:checked ~ label #close-btn {
+  left: 195px;
 }
 /*headerio pabaiga*/
 /*body pradzia*/
@@ -90,10 +121,10 @@ label #open-btn {
 }
 .related,
 .others {
-  width: 1200px;
-  margin: 20px auto 20px auto;
+  gap: 10px;
+  margin: 20px 250px 20px 250px;
 }
 .others-boxes:hover {
-  color: grey;
   cursor: pointer;
+  border: grey 3px;
 }
